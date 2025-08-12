@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>kom-godt</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/theme/league.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="program" class="slide level2"
+data-background-color="white">
+<h2 data-background-color="white">Program</h2>
+<pre><code>09.00-09.30     Velkomst og intro
+09.30-10.00     Gen AI, LLM, sprogmodel
+10.00-11.30     Faldgruber ved AI
+
+11.30-12.30     Frokost og gåtur på stranden
+
+13.30-14.45     Praktiske øvelser med AI
+14.45-15.00     Afrunding og på gensyn</code></pre>
+</section>
+<section>
+<section id="velkommen" class="title-slide slide level1"
+data-background-color="white">
+<h1 data-background-color="white">Velkommen</h1>
+
+</section>
+<section id="section" class="slide level2"
+data-background-image="./assets/logos.png" data-background-size="42%"
+data-background-color="white">
+<h2 data-background-image="./assets/logos.png"
+data-background-size="42%" data-background-color="white"></h2>
+</section>
+<section id="section-1" class="slide level2"
+data-background-image="./assets/nb.jpg" data-background-size="24%"
+data-background-color="#140560">
+<h2 data-background-image="./assets/nb.jpg" data-background-size="24%"
+data-background-color="#140560"></h2>
+</section>
+<section id="mål" class="slide level2" data-background-color="white">
+<h2 data-background-color="white">Mål</h2>
+<ul>
+<li class="fragment">Give præcise prompts for at få de bedste
+resultater.</li>
+<li class="fragment">Gennemskue og vurdere de svar, du får.</li>
+<li class="fragment">Bruge AI til at løse konkrete, dagligdags
+opgaver.</li>
+<li class="fragment">Beskytte dine data og forstå de etiske
+spilleregler.</li>
+</ul>
+</section>
+<section id="kort-sagt" class="slide level2"
+data-background-color="white">
+<h2 data-background-color="white">Kort sagt</h2>
+<blockquote>
+<p>Bliv en <strong>selvsikker og kritisk bruger</strong> af AI.</p>
+</blockquote>
+</section>
+<section id="lets-go" class="slide level2"
+data-background-color="white">
+<h2 data-background-color="white">Let’s go</h2>
+</section></section>
+<section>
+<section id="ai" class="title-slide slide level1">
+<h1 class="r-fit-text">AI</h1>
+
+</section>
+<section id="hvad-er-en-llm" class="slide level2">
+<h2>Hvad er en LLM?</h2>
+<p>En <strong>Large Language Model (LLM)</strong> er hjernen bag de
+AI’er, vi skal bruge i dag (som ChatGPT og Gemini).</p>
+<p>Tænk på den som en ekstremt avanceret “auto-complete”.</p>
+</section>
+<section class="slide level2">
+
+<ol type="1">
+<li class="fragment">Den er blevet <strong>trænet</strong> på enorme
+mængder tekst og data fra internettet.</li>
+<li class="fragment">Den har lært <strong>mønstre</strong>, sammenhænge
+og strukturer i sprog.</li>
+<li class="fragment">Når du stiller et spørgsmål,
+<strong>forudsiger</strong> den det mest sandsynlige svar, ord for ord,
+baseret på sin træning.</li>
+</ol>
+<aside class="notes">
+<p><strong>Vigtigt:</strong> En LLM “forstår” ikke verden som et
+menneske. Den er en mønstergenkendelses-maskine. Det er derfor, den
+nogle gange kan tage fejl. Understreg denne pointe for deltagerne.</p>
+</aside>
+</section>
+<section id="hvad-er-hallucination" class="slide level2">
+<h2>Hvad er “Hallucination”?</h2>
+<p>En AI “hallucinerer”, når den <strong>finder på fakta, kilder eller
+oplysninger</strong>, som lyder overbevisende, men er forkerte.</p>
+<p><strong>Hvorfor sker det?</strong></p>
+<aside class="notes">
+<p>Fordi AI’ens primære mål er at give et sprogligt korrekt og
+sandsynligt svar – ikke nødvendigvis et <em>sandt</em> svar. Den
+udfylder “huller” i sin viden med det, der lyder mest plausibelt.</p>
+</aside>
+</section>
+<section id="eksempel-på-hallucination" class="slide level2">
+<h2>Eksempel på hallucination:</h2>
+<ul>
+<li class="fragment"><strong>Prompt:</strong> “Hvem var den første
+danske kvinde på Mount Everest?”</li>
+<li class="fragment"><strong>Mulig hallucination:</strong> “Lene
+Gammelgaard var den første danske kvinde på Mount Everest i 1996, som en
+del af en ekspedition ledet af den berømte sherpa Tenzing Norgay.”</li>
+<li class="fragment"><strong>Faktatjek:</strong> Lene Gammelgaard var
+den første, men Tenzing Norgay døde i 1986 og kunne derfor ikke have
+ledet ekspeditionen.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<blockquote>
+<p><strong>Huskeregel:</strong> Stol aldrig blindt på en AI. Verificer
+altid vigtige oplysninger.</p>
+</blockquote>
+</section>
+<section id="etik-bias-og-misinformation" class="slide level2">
+<h2>Etik, Bias og Misinformation</h2>
+<p>At bruge AI ansvarligt kræver, at vi kender faldgruberne.</p>
+<ul>
+<li class="fragment"><strong>Bias (Forudindtagethed):</strong> AI’en er
+trænet på data fra internettet – med alle dets fordomme. Den kan derfor
+utilsigtet gengive stereotyper.</li>
+<li class="fragment"><strong>Misinformation:</strong> Fordi AI’er kan
+skrive overbevisende tekster lynhurtigt, er de et effektivt værktøj til
+at sprede falske nyheder.</li>
+<li class="fragment"><strong>Ansvar:</strong> Hvem har ansvaret, hvis en
+AI giver et skadeligt råd? Producenten? Brugeren? Dette er stadig et
+stort, uafklaret spørgsmål.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<blockquote>
+<p><strong>Din opgave som bruger:</strong> Vær kritisk. Spørg dig selv:
+“Kan dette være farvet af data? Er denne information troværdig?”</p>
+</blockquote>
+</section></section>
+<section>
+<section id="håndværket-at-tale-med-en-ai"
+class="title-slide slide level1">
+<h1>Håndværket – At tale med en AI</h1>
+
+</section>
+<section id="skriv-effektive-prompts" class="slide level2">
+<h2>Skriv effektive “Prompts”</h2>
+<p>Kvaliteten af dit output afhænger direkte af kvaliteten af dit input.
+En “prompt” er din kommando til AI’en.</p>
+</section>
+<section class="slide level2">
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Dårlig Prompt (Uklar)</th>
+<th style="text-align: left;">God Prompt (Præcis og Kontekstfuld)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">“Skriv noget om elbiler.”</td>
+<td style="text-align: left;">“Skriv en kort, objektiv tekst på 150 ord
+om fordele og ulemper ved at eje en elbil i Danmark i 2025. Målgruppen
+er boligejere.”</td>
+</tr>
+<tr>
+<td style="text-align: left;">“Hvordan laver jeg en projektplan?”</td>
+<td style="text-align: left;">“Agér som en erfaren projektleder. Lav en
+trin-for-trin guide til en projektplan for lancering af en ny
+hjemmeside.”</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="de-4-grundpiller-i-en-god-prompt" class="slide level2">
+<h2>De 4 grundpiller i en god prompt:</h2>
+<ol type="1">
+<li class="fragment"><strong>Rolle:</strong> Hvem skal AI’en være?
+<ul>
+<li class="fragment"><em>f.eks. “Agér som en
+marketingekspert…”</em></li>
+</ul></li>
+<li class="fragment"><strong>Opgave:</strong> Hvad skal den gøre?
+<ul>
+<li class="fragment"><em>f.eks. “…skriv 5 forslag til et
+slogan…”</em></li>
+</ul></li>
+<li class="fragment"><strong>Kontekst:</strong> Hvad er baggrunden?
+<ul>
+<li class="fragment"><em>f.eks. “…for en ny økologisk café…”</em></li>
+</ul></li>
+<li class="fragment"><strong>Format:</strong> Hvordan skal outputtet se
+ud?
+<ul>
+<li class="fragment"><em>f.eks. “…i en punktopstilling.”</em></li>
+</ul></li>
+</ol>
+</section>
+<section id="øvelse-hjælp-din-kollega" class="slide level2">
+<h2>Øvelse: “Hjælp din kollega”</h2>
+<p><strong>Scenarie:</strong> Din kollega skal bede om lønforhøjelse,
+men ved ikke, hvordan man starter. Kollegaen prøver med prompten:
+<em>“Skriv en mail om løn”</em>.</p>
+<p><strong>Din opgave (2 minutter):</strong></p>
+<ol type="1">
+<li class="fragment">Diskuter med din sidemand, hvorfor <em>“Skriv en
+mail om løn”</em> er en dårlig prompt.</li>
+<li class="fragment">Skriv sammen en ny og forbedret prompt, der bruger
+de 4 grundpiller (Rolle, Opgave, Kontekst, Format).</li>
+</ol>
+<aside class="notes">
+<p>Giv deltagerne 2 minutter og saml derefter op på deres forslag i
+plenum. Fremhæv de gode eksempler, der specificerer tone, argumenter, og
+modtager.</p>
+</aside>
+</section>
+<section id="juster-og-forfin-svar" class="slide level2">
+<h2>Juster og forfin svar</h2>
+<p>Dit første svar er sjældent det endelige. Den virkelige magi opstår i
+dialogen.</p>
+</section>
+<section class="slide level2">
+
+<p><strong>Eksempel på forfining:</strong></p>
+<ol type="1">
+<li class="fragment"><strong>Du:</strong> “Giv mig nogle ideer til en
+teambuilding-dag for en IT-afdeling på 20 personer.”
+<ul>
+<li class="fragment"><em>AI: Giver en generisk liste: Bowling, go-kart,
+middag.</em></li>
+</ul></li>
+<li class="fragment"><strong>Du:</strong> “Gode ideer, men det skal
+styrke samarbejde. Budgettet er 500 kr. pr. person, og det skal være i
+København.”
+<ul>
+<li class="fragment"><em>AI: Giver mere målrettede forslag: Escape room,
+‘Hackathon’, LEGO-workshop.</em></li>
+</ul></li>
+<li class="fragment"><strong>Du:</strong> “Escape room lyder godt. Find
+3 udbydere i København og sammenlign deres priser og temaer i en tabel.”
+<ul>
+<li class="fragment"><em>AI: Leverer en struktureret tabel med de
+ønskede informationer.</em></li>
+</ul></li>
+</ol>
+</section>
+<section class="slide level2">
+
+<blockquote>
+<p><strong>Huskeregel:</strong> Se AI’en som en assistent, du instruerer
+og guider.</p>
+</blockquote>
+</section></section>
+<section>
+<section id="praktisk-anvendelse" class="title-slide slide level1">
+<h1>Praktisk anvendelse</h1>
+
+</section>
+<section id="brug-ai-til-konkrete-opgaver." class="slide level2">
+<h2>Brug AI til konkrete opgaver.</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Opgave</th>
+<th style="text-align: left;">Eksempel-prompt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Skrive E-mails</strong></td>
+<td style="text-align: left;">“Skriv en venlig, men formel e-mail til
+vores kunder, hvor vi informerer om, at kontoret er lukket på
+Grundlovsdag den 5. juni.”</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Opsummere</strong></td>
+<td style="text-align: left;">“Opsummér de vigtigste pointer fra denne
+tekst [indsæt tekst] i 5 punkttegn. Fokuser på økonomiske
+konsekvenser.”</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Brainstorme</strong></td>
+<td style="text-align: left;">“Jeg skal finde på et navn til en ny
+podcast om bæredygtighed i hverdagen. Giv mig 20 kreative
+navneforslag.”</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Planlægge</strong></td>
+<td style="text-align: left;">“Lav et udkast til en tidslinje for et
+‘flytte kontor’-projekt. Startdato 1/9, slutdato 30/11. Inkluder faser
+som planlægning, pakning, flytning og opsætning.”</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="øvelse-planlæg-en-rejse" class="slide level2">
+<h2>Øvelse: Planlæg en Rejse</h2>
+<p><strong>Din opgave (5 minutter):</strong></p>
+<ol type="1">
+<li class="fragment">Åbn din foretrukne AI-assistent (f.eks. Gemini
+eller ChatGPT).</li>
+<li class="fragment">Planlæg en 3-dages weekendtur til Prag udelukkende
+ved hjælp af AI’en.</li>
+<li class="fragment"><strong>Du skal som minimum have:</strong>
+<ul>
+<li class="fragment">Forslag til transport (fly/tog).</li>
+<li class="fragment">3 forslag til hoteller i forskellige
+prisklasser.</li>
+<li class="fragment">En dagsplan for lørdag med seværdigheder og et
+restaurantforslag.</li>
+</ul></li>
+</ol>
+</section>
+<section class="slide level2">
+
+<blockquote>
+<p>Brug forfinings-teknikken. Start bredt og bliv mere specifik.</p>
+</blockquote>
+</section>
+<section id="værktøjer-og-sikkerhed" class="slide level2">
+<h2>Værktøjer og sikkerhed</h2>
+<p>Forskelle på AI-modeller.</p>
+<p>Der findes mange forskellige AI-modeller, og de har hver deres
+styrker. Her er en generaliseret sammenligning.</p>
+</section>
+<section class="slide level2">
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Egenskab</th>
+<th style="text-align: left;"><strong>ChatGPT (OpenAI)</strong></th>
+<th style="text-align: left;"><strong>Gemini (Google)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Primær Styrke</strong></td>
+<td style="text-align: left;">Ofte meget kreativ, stærk i dialog og til
+at generere menneskelignende tekst.</td>
+<td style="text-align: left;">Ofte stærk i integration med andre
+Google-værktøjer, research og “real-time” data.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Svaghed</strong></td>
+<td style="text-align: left;">Kan have en “ældre” vidensbase (afhængig
+af version).</td>
+<td style="text-align: left;">Kan nogle gange være mere “forsigtig”
+eller “politisk korrekt” i sine svar.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Bedst til…</strong></td>
+<td style="text-align: left;">Kreativ skrivning, brainstorming,
+sparring, manuskripter.</td>
+<td style="text-align: left;">Research, planlægning, opsummering af
+nyere information, integration med services.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="slide level2">
+
+<blockquote>
+<p><strong>Anbefaling:</strong> Prøv dem begge! Brug det værktøj, der
+passer bedst til opgaven.</p>
+</blockquote>
+</section>
+<section id="øvelse-sammenlign-resultater" class="slide level2">
+<h2>Øvelse: Sammenlign Resultater</h2>
+<p><strong>Din opgave (5 minutter):</strong></p>
+<ol type="1">
+<li class="fragment">Vælg en af de følgende prompter:
+<ul>
+<li class="fragment">“Skriv et kort digt om efterår i København.”</li>
+<li class="fragment">“Forklar begrebet ‘fotosyntese’ som var jeg 10 år
+gammel.”</li>
+</ul></li>
+<li class="fragment">Kør den <strong>præcis samme prompt</strong> i både
+ChatGPT og Gemini (eller en anden AI).</li>
+<li class="fragment">Sammenlign resultaterne. Hvad er forskellene?
+Hvilket svar foretrækker du, og hvorfor?</li>
+</ol>
+<aside class="notes">
+<p>Bed deltagerne dele deres observationer. Er der forskel i tone, stil,
+længde, eller de fakta de præsenterer? Dette er en god øvelse i kritisk
+vurdering.</p>
+</aside>
+</section>
+<section id="beskyt-dine-private-oplysninger" class="slide level2">
+<h2>Beskyt dine Private Oplysninger</h2>
+<p>Alt, hvad du indtaster, kan potentielt blive brugt til at træne AI’en
+yderligere.</p>
+</section>
+<section class="slide level2">
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Dette kan du trygt dele</strong>
+<br> (Offentlig info)</th>
+<th style="text-align: left;"><strong>Dette bør du ALDRIG dele</strong>
+<br> (Følsom info)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Generelle spørgsmål og research</td>
+<td style="text-align: left;">Personnumre (CPR), passwords,
+kreditkortoplysninger</td>
+</tr>
+<tr>
+<td style="text-align: left;">Anonymiserede data <br> <em>(f.eks. “En
+kunde har et problem med…”)</em></td>
+<td style="text-align: left;">Fortrolige forretningsstrategier eller
+kundedata</td>
+</tr>
+<tr>
+<td style="text-align: left;">Kreativ skrivning og brainstorming</td>
+<td style="text-align: left;">Personlige helbredsoplysninger eller
+private samtaler</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="slide level2">
+
+<blockquote>
+<p><strong>Tommelfingerregel:</strong> Hvis du ikke ville skrive det på
+et åbent postkort, skal du ikke indtaste det i en offentlig AI.</p>
+</blockquote>
+</section></section>
+<section>
+<section id="opsamling" class="title-slide slide level1">
+<h1>Opsamling</h1>
+
+</section>
+<section id="hvordan-spotter-du-ai-genereret-indhold"
+class="slide level2">
+<h2>Hvordan spotter du AI-genereret indhold?</h2>
+<p>Det bliver sværere, men her er nogle tegn at kigge efter:</p>
+<ul>
+<li class="fragment"><strong>Perfekt, men sjælløs:</strong> Sproget er
+grammatisk perfekt, men mangler personlighed.</li>
+<li class="fragment"><strong>Gentagende:</strong> AI’er har tendens til
+at gentage bestemte fraser eller strukturer.</li>
+<li class="fragment"><strong>Vage kilder:</strong> “Nogle eksperter
+mener…” eller henvisninger til ikke-eksisterende studier.</li>
+</ul>
+</section>
+<section id="muligheder" class="slide level2">
+<h2>Muligheder…</h2>
+<p><strong>Hvad AI er fantastisk til i dag:</strong></p>
+<ul>
+<li class="fragment"><strong>Assistent:</strong> Få udkast, research,
+ideer og struktur.</li>
+<li class="fragment"><strong>Hastighed:</strong> Producere store mængder
+tekst eller mange variationer hurtigt.</li>
+<li class="fragment"><strong>Kreativ Partner:</strong> Bryde
+skriveblokeringer og udforske nye vinkler.</li>
+<li class="fragment"><strong>Forenkling:</strong> Forklare komplekse
+emner på en letforståelig måde.</li>
+</ul>
+</section>
+<section id="og-begrænsninger" class="slide level2">
+<h2>…og begrænsninger</h2>
+<p><strong>Hvor AI stadig har begrænsninger:</strong></p>
+<ul>
+<li class="fragment"><strong>Faktuel Pålidelighed:</strong> Kræver altid
+faktatjek.</li>
+<li class="fragment"><strong>Menneskelig Forståelse:</strong> Mangler
+empati og situationsfornemmelse.</li>
+<li class="fragment"><strong>Ægte Originalitet:</strong> Skaber ud fra
+eksisterende data.</li>
+<li class="fragment"><strong>Etisk dømmekraft:</strong> Kan ikke tage
+komplekse etiske beslutninger.</li>
+</ul>
+</section></section>
+<section>
+<section id="tak-for-i-dag" class="title-slide slide level1">
+<h1>Tak for i dag!</h1>
+
+</section>
+<section id="du-har-prøvet" class="slide level2">
+<h2>Du har prøvet</h2>
+<ul>
+<li class="fragment">Bruge en AI som sparringspartner.</li>
+<li class="fragment">Sammenligne resultater fra forskellige
+værktøjer.</li>
+<li class="fragment">Skrive kreative tekster og planlægge et
+arrangement.</li>
+<li class="fragment">Hjælpe en kollega med at skrive en god prompt.</li>
+</ul>
+</section>
+<section id="dine-næste-skridt" class="slide level2">
+<h2>Dine næste skridt</h2>
+<ol type="1">
+<li class="fragment"><strong>Eksperimentér!</strong> Den bedste måde at
+lære på er ved at prøve sig frem.</li>
+<li class="fragment"><strong>Vær kritisk.</strong> Forhold dig altid
+nysgerrigt og kritisk til de svar, du får.</li>
+<li class="fragment"><strong>Del din viden.</strong> Hjælp dine kolleger
+og venner med at blive bedre AI-brugere.</li>
+</ol>
+</section></section>
+<section id="spørgsmål" class="title-slide slide level1">
+<h1>Spørgsmål?</h1>
+
+</section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^5/dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="https://unpkg.com/reveal.js@^5/plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^5/plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^5/plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
