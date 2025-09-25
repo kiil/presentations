@@ -1,6 +1,6 @@
 # AI på en formiddag
 
-## Kender I den her fyr {background-image="./kursus1/assets/Larry_Ellison_picture.png"}
+## Kender I den her fyr {background-image="assets/Larry_Ellison_picture.png"}
 
 
 ## Mål
