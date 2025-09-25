@@ -18,7 +18,6 @@
 - Forstå muligheder og faremomenter i AI
 - Give præcise prompts og få gode resultater
 - Strukturere projekter for kvalitet og overblik
-- Bruge sprogmodeller til at løse konkrete opgaver
 
 ---
 
@@ -30,13 +29,13 @@
 
 En **Large Language Model (LLM)** er hjernen bag de AI'er, vi skal bruge i dag.
 
-Tænk på den som en ekstremt avanceret "auto-complete".
+Tænk på den som en avanceret "auto-complete".
 
 ------------------------------------------------------------------------
 
 1.  En stor sprogmodel er blevet **trænet** på enorme mængder tekst
 2.  Den har lært **mønstre**, sammenhænge og strukturer i sprog
-3.  Den giver det mest sandsynlige svar, baseret på sin træning
+3.  Den giver det mest **sandsynlige** svar, baseret på sin træning
 
 ## Hallucination
 
@@ -66,7 +65,9 @@ En AI "hallucinerer", når den **finder på fakta, kilder eller oplysninger**, s
 
 ## Gruppearbejde
 
-Tal om AI ved bordene:
+To og to ved bordene
+
+---
 
 Har I oplevet hallucinationer og forkerte svar fra AI?
 
@@ -88,14 +89,18 @@ Bruger I allerede AI og har det fungeret for jer?
 
 ------------------------------------------------------------------------
 
-|Dårlig Prompt (Uklar)|God Prompt (Præcis og Kontekstfuld)|
+|Dårlig Prompt (Uklar)|God Prompt (Målrettet)|
 |:--------------------|:----------------------------------|
 |"Skriv noget om elbiler."|"Skriv en kort, objektiv tekst på 150 ord om fordele og ulemper ved at eje en elbil i Danmark i 2025. Målgruppen er boligejere."|
 |"Hvordan laver jeg en projektplan?"|"Agér som en erfaren projektleder. Lav en trin-for-trin guide til en projektplan for lancering af en ny hjemmeside."|
 
 ---
 
-### De 4 grundpiller i en god prompt:
+### De 4 grundpiller i en god prompt
+
+Rolle, Opgave, Kontekst, Format
+
+---
 
 1.  **Rolle:** Hvem skal AI'en være?
     - *"Agér som en marketingekspert..."*
@@ -108,13 +113,9 @@ Bruger I allerede AI og har det fungeret for jer?
 
 ---
 
-### Fra prompt til samtale
+### Forfining
 
 Dit første svar er sjældent det endelige. Den virkelige magi opstår i dialogen.
-
-------------------------------------------------------------------------
-
-**Eksempel på forfining:**
 
 ------------------------------------------------------------------------
 
@@ -129,11 +130,15 @@ Dit første svar er sjældent det endelige. Den virkelige magi opstår i dialoge
 
 > **Huskeregel:** Se AI'en som en assistent, du instruerer og guider.
 
-## Øvelser: Prompt i praksis
+## Øvelser: Prompting i praksis
 
-**Afprøv prompts**: Giv AI et uklart prompt og omskriv det så til et mere målrettet i ny chat. Hvad fortæller resultaterne dig?
+Åbn din computer, tablet eller telefon eller del med din sidemakker
 
-**Grundpiller i prompting**: Prøv at skabe et prompt som både indeholder en *rolle*, en *opgave*, noget *kontekst* og et *format*.
+---
+
+**Afprøv prompts**: Giv AI et uklart prompt og omskriv det til et mere målrettet i en ny chat. Hvad fortæller resultaterne dig?
+
+**4 grundpiller i prompting**: Prøv at skabe et prompt som både indeholder en *rolle*, en *opgave*, noget *kontekst* og et *format*.
 
 **Brug forfinings-teknikken**: Start bredt og bliv mere specifik i samme chat. Kan du guide AI på rette vej?
 
@@ -146,7 +151,6 @@ Dit første svar er sjældent det endelige. Den virkelige magi opstår i dialoge
 - Hurtigere overblik over projekter
 - Nem adgang til vigtige chats
 - Hold styr på filer og data
-- Skab klar adskillelse mellem kunder
 
 ------------------------------------------------------------------------
 
@@ -158,14 +162,17 @@ Dit første svar er sjældent det endelige. Den virkelige magi opstår i dialoge
 
 ------------------------------------------------------------------------
 
-## Øvelse: 
+## Øvelse: Brug Projekter i ChatGPT
+
+Brug din tablet eller laptop eller del med sidemakker. Vi skal ind på ChatGPT.
+
+---
 
 **Tænk over to projekter**: Tænk over to projekter som du gerne vil have hjælp til fra kunstig intelligens. Hvorfor er det en fordel at holde dem adskilte?
 
 **Opret projekter**: Brug ChatGPT gratis og opret to projekter.
 
 **Start en chat**: Begynd en samtale med ChatGPT hvor du forklarer den om det projekt du har valgt at starte med.
-
 
 # Opsamling
 
@@ -214,5 +221,7 @@ Alt du deler om en online AI, kan potentielt blive set af uvedkommende.
 1.  **Eksperimentér:** Den bedste måde at lære på er ved at prøve sig frem
 2.  **Systematisér:** Sorter i dine teknikker og hold fast i de bedste
 3.  **Del din viden:** Hjælp kolleger og venner med at blive bedre AI-brugere
+
+## Feedback og spørgsmål
 
 # Tak for i dag!
