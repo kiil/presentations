@@ -1,77 +1,90 @@
 # AI på en formiddag
 
-## Kender I den her fyr {background-image="assets/Larry_Ellison_picture.png"}
+## Program
 
+|              |                              |
+| -            | -                            |
+| 09.00        | Kaffe og croissant           |
+| 09.15       | AI - fordele og faldgruber             |
+| 09.45       | Gruppearbejde            |
+| 10.15       | Plenum                       |
+| 10.30       | Prompts og øvelser                      |
+| 10.45       | Plenum                       |
+| 11.00       | Projekter og øvelser                               |
+| 11.45        | Opsamling |
 
 ## Mål
 
-- Give præcise prompts for at få de bedste resultater.
-- Strukturere din arbejdsgang for at sikre kvalitet og overblik.
-- Gennemskue og vurdere de svar, du får.
-- Bruge AI til at løse konkrete, dagligdags opgaver.
-- Beskytte dine data og forstå de etiske spilleregler.
+- Forstå muligheder og faremomenter i AI
+- Give præcise prompts og få gode resultater
+- Strukturere projekter for kvalitet og overblik
+- Bruge sprogmodeller til at løse konkrete opgaver
+
+---
+
+> Bliv en **selvsikker og kritisk bruger** af AI.
+
+## Hvad er en LLM? {background-image="./assets/complicated.gif"}
 
 ------------------------------------------------------------------------
 
-## Kort sagt
-
-> Bliv en **selvsikker, disciplineret og kritisk bruger** af AI.
-
-## Disciplineret?
-
-![](./assets/virkelighed.png)
-
-## Let's go
-
-## {background-image="./assets/complicated.gif"}
-
-## Hvad er en LLM?
-
-En **Large Language Model (LLM)** er hjernen bag de AI'er, vi skal bruge i dag (som ChatGPT og Gemini).
+En **Large Language Model (LLM)** er hjernen bag de AI'er, vi skal bruge i dag.
 
 Tænk på den som en ekstremt avanceret "auto-complete".
 
 ------------------------------------------------------------------------
 
-1.  Den er blevet **trænet** på enorme mængder tekst og data fra internettet.
-2.  Den har lært **mønstre**, sammenhænge og strukturer i sprog.
-3.  Når du stiller et spørgsmål, **forudsiger** den det mest sandsynlige svar, ord for ord, baseret på sin træning.
+1.  En stor sprogmodel er blevet **trænet** på enorme mængder tekst
+2.  Den har lært **mønstre**, sammenhænge og strukturer i sprog
+3.  Den giver det mest sandsynlige svar, baseret på sin træning
 
-
-## Hvad er "Hallucination"?
+## Hallucination
 
 En AI "hallucinerer", når den **finder på fakta, kilder eller oplysninger**, som lyder overbevisende, men er forkerte.
 
-**Hvorfor sker det?**
-
-
-## Eksempel på hallucination:
+---
 
 - **Prompt:** "Hvem var den første danske kvinde på Mount Everest?"
-- **Mulig hallucination:** "Lene Gammelgaard var den første danske kvinde på Mount Everest i 1996, som en del af en ekspedition ledet af den berømte sherpa Tenzing Norgay."
-- **Faktatjek:** Lene Gammelgaard var den første, men Tenzing Norgay døde i 1986 og kunne derfor ikke have ledet ekspeditionen.
+- **AI svarer:** "Lene Gammelgaard var den første danske kvinde på Mount Everest i 1996, som en del af en ekspedition ledet af den berømte sherpa Tenzing Norgay."
+
+---
+
+- **Faktatjek:** Lene Gammelgaard var den første, men Tenzing Norgay døde i 1986 og kunne derfor ikke have ledet ekspeditionen i '96.
 
 ------------------------------------------------------------------------
 
 > **Huskeregel:** Stol aldrig blindt på en AI. Verificer altid vigtige oplysninger.
 
-## Etik, Bias og Misinformation
+## Bias og etik
 
-At bruge AI ansvarligt kræver, at vi kender faldgruberne.
-
-- **Bias (Forudindtagethed):** AI'en er trænet på data fra internettet – med alle dets fordomme. Den kan derfor utilsigtet gengive stereotyper.
-- **Misinformation:** Fordi AI'er kan skrive overbevisende tekster lynhurtigt, er de et effektivt værktøj til at sprede falske nyheder.
+- **Bias:** AI'en er trænet på data fra internettet – med alle dets fordomme. Den kan derfor utilsigtet gengive stereotyper.
 - **Ansvar:** Hvem har ansvaret, hvis en AI giver et skadeligt råd? Producenten? Brugeren? Dette er stadig et stort, uafklaret spørgsmål.
 
 ------------------------------------------------------------------------
 
-> **Din opgave som bruger:** Vær kritisk. Spørg dig selv: "Kan dette være farvet af data? Er denne information troværdig?"
+> **Din opgave som bruger:** Vær kritisk. Spørg dig selv: "Kan dette være farvet af data? Er denne information troværdig? Kan jeg stå på mål for det?"
 
-# Håndværket – At tale med en AI
+## Gruppearbejde
 
-## Skriv effektive "Prompts"
+Tal om AI ved bordene:
 
-Kvaliteten af dit output afhænger direkte af kvaliteten af dit input. En "prompt" er din kommando til AI'en.
+Har I oplevet hallucinationer og forkerte svar fra AI?
+
+Hvem har ansvaret for tekst som en LLM spytter ud?
+
+Bruger I allerede AI og har det fungeret for jer?
+
+## Plenum
+
+# Best practices
+
+## Prompts
+
+---
+
+### Skriv effektive "Prompts"
+
+> Kvaliteten af dit output afhænger direkte af kvaliteten af dit input. En "prompt" er din kommando til AI'en.
 
 ------------------------------------------------------------------------
 
@@ -80,28 +93,22 @@ Kvaliteten af dit output afhænger direkte af kvaliteten af dit input. En "promp
 |"Skriv noget om elbiler."|"Skriv en kort, objektiv tekst på 150 ord om fordele og ulemper ved at eje en elbil i Danmark i 2025. Målgruppen er boligejere."|
 |"Hvordan laver jeg en projektplan?"|"Agér som en erfaren projektleder. Lav en trin-for-trin guide til en projektplan for lancering af en ny hjemmeside."|
 
-## De 4 grundpiller i en god prompt:
+---
+
+### De 4 grundpiller i en god prompt:
 
 1.  **Rolle:** Hvem skal AI'en være?
-    - *f.eks. "Agér som en marketingekspert..."*
+    - *"Agér som en marketingekspert..."*
 2.  **Opgave:** Hvad skal den gøre?
-    - *f.eks. "...skriv 5 forslag til et slogan..."*
+    - *"...skriv 5 forslag til et slogan..."*
 3.  **Kontekst:** Hvad er baggrunden?
-    - *f.eks. "...for en ny økologisk café..."*
+    - *"...for en ny økologisk café..."*
 4.  **Format:** Hvordan skal outputtet se ud?
-    - *f.eks. "...i en punktopstilling."*
+    - *"...i en punktopstilling."*
 
-## Øvelse: "Hjælp din kollega"
+---
 
-**Scenarie:** Din kollega skal bede om lønforhøjelse, men ved ikke, hvordan man starter. Kollegaen prøver med prompten: *"Skriv en mail om løn"*.
-
-**Din opgave (2 minutter):**
-
-1.  Diskuter med din sidemand, hvorfor *"Skriv en mail om løn"* er en dårlig prompt.
-2.  Skriv sammen en ny og forbedret prompt, der bruger de 4 grundpiller (Rolle, Opgave, Kontekst, Format).
-
-
-## Juster og forfin svar
+### Fra prompt til samtale
 
 Dit første svar er sjældent det endelige. Den virkelige magi opstår i dialogen.
 
@@ -122,80 +129,23 @@ Dit første svar er sjældent det endelige. Den virkelige magi opstår i dialoge
 
 > **Huskeregel:** Se AI'en som en assistent, du instruerer og guider.
 
-# Struktur og overblik
+## Øvelser: Prompt i praksis
 
-## De to hovedspor
+**Afprøv prompts**: Giv AI et uklart prompt og omskriv det så til et mere målrettet i ny chat. Hvad fortæller resultaterne dig?
 
-Afklar problemstilling før du begynder.
+**Grundpiller i prompting**: Prøv at skabe et prompt som både indeholder en *rolle*, en *opgave*, noget *kontekst* og et *format*.
 
-|Generel chat|Specifik opgave|
-|------------|---------------|
-|Procesorienteret|Resultatorienteret|
-|Åben, undersøgende prompt|Lukket, handlingsorienteret prompt|
-|Dialog og inspiration|Delegering og resultat|
-|Indskydelser og forhandling|Instruktioner og ressourcer|
-|Sparringspartner|Underordnet|
-|Brug den indbyggede viden|Du fodrer AI med relevant indhold|
+**Brug forfinings-teknikken**: Start bredt og bliv mere specifik i samme chat. Kan du guide AI på rette vej?
 
-## Øvelse: Brug ChatGPT på to måder
+## Plenum
 
-------------------------------------------------------------------------
-
-### Del 1: Identificér typen (10 min)
-
-**Opgave:** Læs følgende prompts og beslut, hvilken type hver er
-
-1.  “Hvad er forskellige måder at strukturere en workshop på?”
-2.  “Lav en workshopplan til torsdag kl. 14 med 3 øvelser og pauser.”
-3.  “Hvad skal man være opmærksom på, når man skriver en god jobannonce?”
-4.  “Skriv en jobannonce til en UX-designer med fokus på bæredygtighed.”
-
-------------------------------------------------------------------------
-
-### Del 2: Omskriv og test (10–15 min)
-
-**Opgave:** Find på en kort “uklar” prompt, og omskriv den til
-
-1.  En **generel/udforskende** version
-2.  En **specifik/målrettet** version
-3.  *(Valgfrit)* Test begge i ChatGPT og sammenlign svarene
-
-------------------------------------------------------------------------
-
-### 💬 Refleksion i plenum (5 min)
-
-Diskutér
-
-- Hvornår har du brug for sparring – og hvornår bare et hurtigt resultat?
-- Hvordan kan du bruge de to tilgange mere bevidst i dit eget arbejde?
-- Hvilke faldgruber er der, hvis man blander dem?
-
-------------------------------------------------------------------------
-
-# Organisering og tilrettelæggelse
-
-## Stikord
-
-Foldere / Projekter
-
-Hukommelse
-
-Genopfriskning
-
-Genoptag
-
+# Projekter og struktur
 
 ## Hvorfor organisere?
 
-- Hurtigere overblik
+- Hurtigere overblik over projekter
 - Nem adgang til vigtige chats
-- Mindre rod i arbejdsgangen
-- Lettere overlevering til kollega
-
-## Projekter
-
-- Gruppér chats, filer og noter per projekt
-- Bliv enig om en struktur med teamet
+- Hold styr på filer og data
 - Skab klar adskillelse mellem kunder
 
 ------------------------------------------------------------------------
@@ -206,78 +156,20 @@ Genoptag
 
 ![](./assets/chats-projekt.png)
 
-# Kontekst
-
-## Når et prompt ikke er nok
-
-Det er ofte nødvendigt at fodre AI med information ud over det som kan være i en almindelig prompt.
-
-Det handler om at styre den *sammenhæng* som AI'en skal arbejde inden for.
-
-
-## Problemer
-
-1.  Fejlbehæftet information
-2.  Manglende information
-3.  For meget irrelevant information
-
-
-# Pause {background-color="white"}
-
-# Praktisk anvendelse
-
-## Brug AI til konkrete opgaver.
-
-|Opgave|Eksempel-prompt|
-|:-----|:--------------|
-|**Skrive E-mails**|"Skriv en venlig, men formel e-mail til vores kunder, hvor vi informerer om, at kontoret er lukket på Grundlovsdag den 5. juni."|
-|**Opsummere**|"Opsummér de vigtigste pointer fra denne tekst \[indsæt tekst\] i 5 punkttegn. Fokuser på økonomiske konsekvenser."|
-|**Brainstorme**|"Jeg skal finde på et navn til en ny podcast om bæredygtighed i hverdagen. Giv mig 20 kreative navneforslag."|
-|**Planlægge**|"Lav et udkast til en tidslinje for et 'flytte kontor'-projekt. Startdato 1/9, slutdato 30/11. Inkluder faser som planlægning, pakning, flytning og opsætning."|
-
-## Øvelse: Planlæg en Rejse
-
-**Din opgave (5 minutter):**
-
-1.  Åbn din foretrukne AI-assistent (f.eks. Gemini eller ChatGPT).
-2.  Planlæg en 3-dages weekendtur til Prag udelukkende ved hjælp af AI'en.
-3.  **Du skal som minimum have:**
-    - Forslag til transport (fly/tog).
-    - 3 forslag til hoteller i forskellige prisklasser.
-    - En dagsplan for lørdag med seværdigheder og et restaurantforslag.
-
 ------------------------------------------------------------------------
 
-> Brug forfinings-teknikken. Start bredt og bliv mere specifik.
+## Øvelse: 
 
-## Værktøjer og sikkerhed
+**Tænk over to projekter**: Tænk over to projekter som du gerne vil have hjælp til fra kunstig intelligens. Hvorfor er det en fordel at holde dem adskilte?
 
-Forskelle på AI-modeller.
+**Opret projekter**: Brug ChatGPT gratis og opret to projekter.
 
-Der findes mange forskellige AI-modeller, og de har hver deres styrker. Her er en generaliseret sammenligning.
+**Start en chat**: Begynd en samtale med ChatGPT hvor du forklarer den om det projekt du har valgt at starte med.
 
-------------------------------------------------------------------------
 
-|Egenskab|**ChatGPT (OpenAI)**|**Gemini (Google)**|
-|:-------|:---------------|:--------------|
-|**Primær Styrke**|Ofte meget kreativ, stærk i dialog og til at generere menneskelignende tekst.|Ofte stærk i integration med andre Google-værktøjer, research og "real-time" data.|
-|**Svaghed**|Kan have en "ældre" vidensbase (afhængig af version).|Kan nogle gange være mere "forsigtig" eller "politisk korrekt" i sine svar.|
-|**Bedst til...**|Kreativ skrivning, brainstorming, sparring, manuskripter.|Research, planlægning, opsummering af nyere information, integration med services.|
+# Opsamling
 
-------------------------------------------------------------------------
-
-> **Anbefaling:** Prøv dem begge! Brug det værktøj, der passer bedst til opgaven.
-
-## Øvelse: Sammenlign Resultater
-
-**Din opgave (5 minutter):**
-
-1.  Vælg en af de følgende prompter:
-    - "Skriv et kort digt om efterår i København."
-    - "Forklar begrebet 'fotosyntese' som var jeg 10 år gammel."
-2.  Kør den **præcis samme prompt** i både ChatGPT og Gemini (eller en anden AI).
-3.  Sammenlign resultaterne. Hvad er forskellene? Hvilket svar foretrækker du, og hvorfor?
-
+## Projekter og organisering
 
 ## Beskyt dine Private Oplysninger
 
@@ -285,47 +177,42 @@ Alt du deler om en online AI, kan potentielt blive set af uvedkommende.
 
 ------------------------------------------------------------------------
 
-|**Dette kan du trygt dele** \<br> (Offentlig info)|**Dette bør du ALDRIG dele** \<br> (Følsom info)|
+|**Dette kan du trygt dele** |**Dette bør du ALDRIG dele** |
 |:--------------------------------------------|:------------------------------------------|
 |Generelle spørgsmål og research|Personnumre (CPR), passwords, kreditkortoplysninger|
-|Anonymiserede data \<br> *(f.eks. "En kunde har et problem med...")*|Fortrolige forretningsstrategier eller kundedata|
+|Anonymiserede data *(f.eks. "En kunde har et problem med...")*|Fortrolige forretningsstrategier eller kundedata|
 |Kreativ skrivning og brainstorming|Personlige helbredsoplysninger eller private samtaler|
 
 ------------------------------------------------------------------------
 
 > **Tommelfingerregel:** Hvis du ikke ville skrive det på et åbent postkort, skal du ikke indtaste det i en offentlig AI.
 
-# Opsamling
-
 ## Muligheder...
 
 **Hvad AI er fantastisk til i dag:**
 
-- **Assistent:** Få udkast, research, ideer og struktur.
-- **Hastighed:** Producere store mængder tekst eller mange variationer hurtigt.
-- **Kreativ Partner:** Bryde skriveblokeringer og udforske nye vinkler.
-- **Forenkling:** Forklare komplekse emner på en letforståelig måde.
+- **Assistent:** Få udkast, research, ideer og struktur
+- **Hastighed:** Producere store mængder tekst eller mange variationer hurtigt
+- **Kreativ partner:** Bryde skriveblokeringer og udforske nye vinkler
 
 ## ...og begrænsninger
 
 **Hvor AI stadig har begrænsninger:**
 
-- **Faktuel Pålidelighed:** Kræver altid faktatjek.
-- **Menneskelig Forståelse:** Mangler empati og situationsfornemmelse.
-- **Ægte Originalitet:** Skaber ud fra eksisterende data.
-- **Etisk dømmekraft:** Kan ikke træffe komplekse etiske beslutninger.
+- **Menneskelig forståelse:** Mangler empati og situationsfornemmelse
+- **Ægte originalitet:** Skaber ud fra eksisterende data
+- **Etisk dømmekraft:** Kan ikke træffe komplekse etiske beslutninger
 
-## Du har prøvet
+## Du har prøvet at
 
-- Bruge en AI som sparringspartner.
-- Sammenligne resultater fra forskellige værktøjer.
-- Skrive kreative tekster og planlægge et arrangement.
-- Hjælpe en kollega med at skrive en god prompt.
+- Bruge en AI med forfinings-teknikken
+- Forbedre prompts med de fire grundpiller
+- Bruge projekter til organisering i ChatGPT
 
 ## Dine næste skridt
 
-1.  **Eksperimentér!** Den bedste måde at lære på er ved at prøve sig frem.
-2.  **Vær kritisk.** Forhold dig altid nysgerrigt og kritisk til de svar, du får.
-3.  **Del din viden.** Hjælp dine kolleger og venner med at blive bedre AI-brugere.
+1.  **Eksperimentér:** Den bedste måde at lære på er ved at prøve sig frem
+2.  **Systematisér:** Sorter i dine teknikker og hold fast i de bedste
+3.  **Del din viden:** Hjælp kolleger og venner med at blive bedre AI-brugere
 
 # Tak for i dag!
