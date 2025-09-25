@@ -13,6 +13,9 @@
     .reveal .sourceCode {  /* see #7635 */
       overflow: visible;
     }
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -42,41 +45,18 @@
 
 
 <section>
-<section id="section" class="title-slide slide level1"
-data-background-image="./assets/logos.png" data-background-size="48%"
-data-background-color="white" data-background-transition="zoom">
-<h1 data-background-image="./assets/logos.png"
-data-background-size="48%" data-background-color="white"
-data-background-transition="zoom"></h1>
+<section id="introduktion" class="title-slide slide level1">
+<h1>Introduktion</h1>
 
-</section>
-<section id="program" class="slide level2"
-data-background-color="white">
-<h2 data-background-color="white">Program</h2>
-<table>
-<tbody>
-<tr>
-<td>Formiddag</td>
-<td>TEORI</td>
-</tr>
-<tr>
-<td>Frokost</td>
-<td>Et godt måltid og en god gåtur</td>
-</tr>
-<tr>
-<td>Eftermiddag</td>
-<td>PRAKSIS</td>
-</tr>
-</tbody>
-</table>
 </section>
 <section id="om-os" class="slide level2" data-background-color="white">
 <h2 data-background-color="white">Om os</h2>
 </section>
-<section id="section-1" class="slide level2"
-data-background-image="./assets/logos.png" data-background-size="48%"
-data-background-color="white" data-background-transition="zoom">
-<h2 data-background-image="./assets/logos.png"
+<section id="section" class="slide level2"
+data-background-image="./common/assets/logos.png"
+data-background-size="48%" data-background-color="white"
+data-background-transition="zoom">
+<h2 data-background-image="./common/assets/logos.png"
 data-background-size="48%" data-background-color="white"
 data-background-transition="zoom"></h2>
 </section>
@@ -84,25 +64,24 @@ data-background-transition="zoom"></h2>
 data-background-color="white">
 <h2 data-background-color="white">Om stedet</h2>
 </section>
-<section id="section-2" class="slide level2"
-data-background-image="./assets/nb.jpg" data-background-size="24%"
-data-background-color="#140560" data-background-transition="zoom">
-<h2 data-background-image="./assets/nb.jpg" data-background-size="24%"
-data-background-color="#140560" data-background-transition="zoom"></h2>
+<section id="section-1" class="slide level2"
+data-background-image="./common/assets/nb.jpg"
+data-background-size="24%" data-background-color="#140560"
+data-background-transition="zoom">
+<h2 data-background-image="./common/assets/nb.jpg"
+data-background-size="24%" data-background-color="#140560"
+data-background-transition="zoom"></h2>
 </section></section>
 <section>
-<section id="ai" class="title-slide slide level1">
-<h1 class="r-fit-text">AI</h1>
+<section id="ai-på-en-formiddag" class="title-slide slide level1">
+<h1>AI på en formiddag</h1>
 
 </section>
 <section id="kender-i-den-her-fyr" class="slide level2"
-data-background-image="./assets/Larry_Ellison_picture.png">
-<h2 data-background-image="./assets/Larry_Ellison_picture.png">Kender I
-den her fyr</h2>
-<aside class="notes">
-<p>Nævn også Nvidia som højest vurderede selskab. AI er allerede en
-kæmpe ting.</p>
-</aside>
+data-background-image="./kursus1/assets/Larry_Ellison_picture.png">
+<h2
+data-background-image="./kursus1/assets/Larry_Ellison_picture.png">Kender
+I den her fyr</h2>
 </section>
 <section id="mål" class="slide level2">
 <h2>Mål</h2>
@@ -132,7 +111,7 @@ af AI.</p>
 <section id="lets-go" class="slide level2">
 <h2>Let’s go</h2>
 </section>
-<section id="section-3" class="slide level2"
+<section id="section-2" class="slide level2"
 data-background-image="./assets/complicated.gif">
 <h2 data-background-image="./assets/complicated.gif"></h2>
 </section>
@@ -153,22 +132,12 @@ og strukturer i sprog.</li>
 <strong>forudsiger</strong> den det mest sandsynlige svar, ord for ord,
 baseret på sin træning.</li>
 </ol>
-<aside class="notes">
-<p><strong>Vigtigt:</strong> En LLM “forstår” ikke verden som et
-menneske. Den er en mønstergenkendelses-maskine. Det er derfor, den
-nogle gange kan tage fejl. Understreg denne pointe for deltagerne.</p>
-</aside>
 </section>
 <section id="hvad-er-hallucination" class="slide level2">
 <h2>Hvad er “Hallucination”?</h2>
 <p>En AI “hallucinerer”, når den <strong>finder på fakta, kilder eller
 oplysninger</strong>, som lyder overbevisende, men er forkerte.</p>
 <p><strong>Hvorfor sker det?</strong></p>
-<aside class="notes">
-<p>Fordi AI’ens primære mål er at give et sprogligt korrekt og
-sandsynligt svar – ikke nødvendigvis et <em>sandt</em> svar. Den
-udfylder “huller” i sin viden med det, der lyder mest plausibelt.</p>
-</aside>
 </section>
 <section id="eksempel-på-hallucination" class="slide level2">
 <h2>Eksempel på hallucination:</h2>
@@ -227,8 +196,8 @@ En “prompt” er din kommando til AI’en.</p>
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col style="width: 37%" />
+<col style="width: 62%" />
 </colgroup>
 <thead>
 <tr>
@@ -288,11 +257,6 @@ mail om løn”</em> er en dårlig prompt.</li>
 <li class="fragment">Skriv sammen en ny og forbedret prompt, der bruger
 de 4 grundpiller (Rolle, Opgave, Kontekst, Format).</li>
 </ol>
-<aside class="notes">
-<p>Giv deltagerne 2 minutter og saml derefter op på deres forslag i
-plenum. Fremhæv de gode eksempler, der specificerer tone, argumenter, og
-modtager.</p>
-</aside>
 </section>
 <section id="juster-og-forfin-svar" class="slide level2">
 <h2>Juster og forfin svar</h2>
@@ -388,14 +352,11 @@ min)</h3>
 hver er</p>
 <ol type="1">
 <li class="fragment">“Hvad er forskellige måder at strukturere en
-workshop på?”<br />
-</li>
+workshop på?”</li>
 <li class="fragment">“Lav en workshopplan til torsdag kl. 14 med 3
-øvelser og pauser.”<br />
-</li>
+øvelser og pauser.”</li>
 <li class="fragment">“Hvad skal man være opmærksom på, når man skriver
-en god jobannonce?”<br />
-</li>
+en god jobannonce?”</li>
 <li class="fragment">“Skriv en jobannonce til en UX-designer med fokus
 på bæredygtighed.”</li>
 </ol>
@@ -408,11 +369,8 @@ min)</h3>
 den til</p>
 <ol type="1">
 <li class="fragment">En <strong>generel/udforskende</strong>
-version<br />
-</li>
-<li class="fragment">En <strong>specifik/målrettet</strong>
-version<br />
-</li>
+version</li>
+<li class="fragment">En <strong>specifik/målrettet</strong> version</li>
 <li class="fragment"><em>(Valgfrit)</em> Test begge i ChatGPT og
 sammenlign svarene</li>
 </ol>
@@ -445,18 +403,12 @@ class="title-slide slide level1">
 <p>Hukommelse</p>
 <p>Genopfriskning</p>
 <p>Genoptag</p>
-<aside class="notes">
-<p>KRISTIAN kommer ind og fortæller om sine erfaringer med ChatGPT og
-Gemini</p>
-</aside>
 </section>
 <section id="hvorfor-organisere" class="slide level2">
 <h2>Hvorfor organisere?</h2>
 <ul>
-<li class="fragment">Hurtigere overblik<br />
-</li>
-<li class="fragment">Nem adgang til vigtige chats<br />
-</li>
+<li class="fragment">Hurtigere overblik</li>
+<li class="fragment">Nem adgang til vigtige chats</li>
 <li class="fragment">Mindre rod i arbejdsgangen</li>
 <li class="fragment">Lettere overlevering til kollega</li>
 </ul>
@@ -464,10 +416,8 @@ Gemini</p>
 <section id="projekter" class="slide level2">
 <h2>Projekter</h2>
 <ul>
-<li class="fragment">Gruppér chats, filer og noter per projekt<br />
-</li>
-<li class="fragment">Bliv enig om en struktur med teamet<br />
-</li>
+<li class="fragment">Gruppér chats, filer og noter per projekt</li>
+<li class="fragment">Bliv enig om en struktur med teamet</li>
 <li class="fragment">Skab klar adskillelse mellem kunder</li>
 </ul>
 </section>
@@ -490,22 +440,14 @@ Gemini</p>
 kan være i en almindelig prompt.</p>
 <p>Det handler om at styre den <em>sammenhæng</em> som AI’en skal
 arbejde inden for.</p>
-<aside class="notes">
-<p>Jo mere god information, jo mindre risiko for hallucination:
-Pdf-filer og andre dokumenter, data i form af excelark, transkriptioner,
-fotos.</p>
-</aside>
 </section>
 <section id="problemer" class="slide level2">
 <h2>Problemer</h2>
 <ol type="1">
-<li class="fragment"><p>Fejlbehæftet information</p></li>
-<li class="fragment"><p>Manglende information</p></li>
-<li class="fragment"><p>For meget irrelevant information</p></li>
+<li class="fragment">Fejlbehæftet information</li>
+<li class="fragment">Manglende information</li>
+<li class="fragment">For meget irrelevant information</li>
 </ol>
-<aside class="notes">
-<p>Det første er værst</p>
-</aside>
 </section></section>
 <section id="pause" class="title-slide slide level1"
 data-background-color="white">
@@ -522,8 +464,8 @@ data-background-color="white">
 <h2>Brug AI til konkrete opgaver.</h2>
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col style="width: 28%" />
+<col style="width: 71%" />
 </colgroup>
 <thead>
 <tr>
@@ -593,9 +535,9 @@ styrker. Her er en generaliseret sammenligning.</p>
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col style="width: 20%" />
+<col style="width: 41%" />
+<col style="width: 38%" />
 </colgroup>
 <thead>
 <tr>
@@ -651,11 +593,6 @@ ChatGPT og Gemini (eller en anden AI).</li>
 <li class="fragment">Sammenlign resultaterne. Hvad er forskellene?
 Hvilket svar foretrækker du, og hvorfor?</li>
 </ol>
-<aside class="notes">
-<p>Bed deltagerne dele deres observationer. Er der forskel i tone, stil,
-længde, eller de fakta de præsenterer? Dette er en god øvelse i kritisk
-vurdering.</p>
-</aside>
 </section>
 <section id="beskyt-dine-private-oplysninger" class="slide level2">
 <h2>Beskyt dine Private Oplysninger</h2>
@@ -666,15 +603,15 @@ uvedkommende.</p>
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col style="width: 51%" />
+<col style="width: 48%" />
 </colgroup>
 <thead>
 <tr>
 <th style="text-align: left;"><strong>Dette kan du trygt dele</strong>
-<br> (Offentlig info)</th>
+&lt;br&gt; (Offentlig info)</th>
 <th style="text-align: left;"><strong>Dette bør du ALDRIG dele</strong>
-<br> (Følsom info)</th>
+&lt;br&gt; (Følsom info)</th>
 </tr>
 </thead>
 <tbody>
@@ -684,8 +621,8 @@ uvedkommende.</p>
 kreditkortoplysninger</td>
 </tr>
 <tr>
-<td style="text-align: left;">Anonymiserede data <br> <em>(f.eks. “En
-kunde har et problem med…”)</em></td>
+<td style="text-align: left;">Anonymiserede data &lt;br&gt; <em>(f.eks.
+“En kunde har et problem med…”)</em></td>
 <td style="text-align: left;">Fortrolige forretningsstrategier eller
 kundedata</td>
 </tr>
@@ -765,17 +702,105 @@ og venner med at blive bedre AI-brugere.</li>
 </section>
 
 <section>
-<section id="spørgsmål" class="title-slide slide level1"
+<section id="afrunding" class="title-slide slide level1"
 data-background-color="white">
-<h1 data-background-color="white">Spørgsmål?</h1>
+<h1 data-background-color="white">Afrunding</h1>
 
 </section>
-<section id="section-4" class="slide level2"
+<section id="section-3" class="slide level2"
 data-background-image="./assets/logos.png" data-background-size="48%"
 data-background-color="white" data-background-transition="zoom">
 <h2 data-background-image="./assets/logos.png"
 data-background-size="48%" data-background-color="white"
 data-background-transition="zoom"></h2>
+</section></section>
+<section>
+<section id="udvalgte-tilbud" class="title-slide slide level1"
+data-background-color="white">
+<h1 data-background-color="white">Udvalgte tilbud</h1>
+
+</section>
+<section id="startpakken-fra-viden-til-forståelse" class="slide level2">
+<h2>Startpakken: Fra viden til forståelse</h2>
+<blockquote>
+<p>Den ideelle start for teams, der vil forstå AI og identificere, hvor
+det kan skabe reel værdi i netop jeres virksomhed.</p>
+</blockquote>
+<p>Intensivt AI-træningsforløb for jeres team kombineret med strategisk
+workshop. Vi går fra basal viden til en prioriteret liste over de mest
+værdifulde AI-projekter for jer. I får både et kompetenceløft og et
+klart, handlingsorienteret startskud på jeres AI-rejse.</p>
+<p>Pris: 55.000 kr. ekskl. moms</p>
+</section>
+<section id="acceleratorpakken-fra-ide-til-prototype"
+class="slide level2">
+<h2>Acceleratorpakken: Fra ide til prototype</h2>
+<blockquote>
+<p>Gå fra strategisk brainstorming til en håndgribelig demonstration af
+AI’s potentiale med jeres egne data og processer.</p>
+</blockquote>
+<p>Vi tager det bedste fra Startpakken – træning og workshop – og
+omsætter jeres bedste idé til en fungerende prototype (Proof of
+Concept). Pakken giver jer en håndgribelig demonstration af AI’s værdi,
+hvilket fjerner usikkerhed og sikrer intern opbakning, før I investerer
+fuldt ud.</p>
+<p>Pris: 175.000 kr. ekskl. moms</p>
+</section>
+<section id="strategisk-rådgivningspakke-jeres-ai-køreplan"
+class="slide level2">
+<h2>Strategisk rådgivningspakke: Jeres AI-køreplan</h2>
+<blockquote>
+<p>Få et komplet strategisk fundament og en klar køreplan for jeres
+AI-rejse, udviklet i tæt samarbejde med jeres ledelse.</p>
+</blockquote>
+<p>Målrettet ledelsen. Vi analyserer jeres virksomheds AI-parathed og
+faciliterer derefter en strategisk workshop for at udvikle jeres vision
+og en konkret køreplan. Leverancen er et færdigt strategidokument, der
+sikrer jeres AI-investeringer er fuldt afstemt med virksomhedens
+overordnede mål.</p>
+<p>Pris: 80.000 kr. ekskl. moms</p>
+</section>
+<section id="implementeringspakken-skræddersyet-ai-løsning"
+class="slide level2">
+<h2>Implementeringspakken: Skræddersyet AI-løsning</h2>
+<blockquote>
+<p>Vi bygger og implementerer en specialiseret AI-løsning, der udnytter
+jeres interne viden og automatiserer jeres unikke processer.</p>
+</blockquote>
+<p>Klar til at eksekvere? Vi designer, bygger og implementerer en
+fuldskala, skræddersyet AI-løsning, f.eks. et intelligent søgesystem
+(RAG) til jeres interne viden. Vi håndterer hele processen for at levere
+et system, der skaber målbar effektivitet og værdi i jeres daglige
+drift.</p>
+<p>Pris: Fra 250.000 kr. ekskl. moms</p>
+</section>
+<section id="retainer-vækstpakke-løbende-sparring-og-optimering"
+class="slide level2">
+<h2>Retainer &amp; vækstpakke: Løbende sparring og optimering</h2>
+<blockquote>
+<p>Sikr jer vedvarende adgang til ekspertviden og få en fast partner,
+der hjælper jer med at navigere, vedligeholde og videreudvikle jeres
+AI-initiativer.</p>
+</blockquote>
+<p>Garanteret løbende adgang til en fast AI-partner. Med denne
+retainer-pakke får I et aftalt antal timer hver måned til sparring,
+support og strategisk rådgivning. Vi hjælper jer med at fastholde
+momentum og sikrer, at jeres AI-løsninger kontinuerligt optimeres og
+skaber værdi.</p>
+<p>Pris: Fra 8.000 kr. pr. måned ekskl. moms</p>
+</section>
+<section id="hjemmesidepakken-forbliv-relevant-med-llms.txt"
+class="slide level2">
+<h2>Hjemmesidepakken: Forbliv relevant med llms.txt</h2>
+<blockquote>
+<p>Med en llms.txt fil og dit vigtigste indhold som markdown-filer
+forbliver du relevant når ChatGPT og Gemini bliver folk nye
+søgemaskiner</p>
+</blockquote>
+<p>Vi analyserer din hjemmeside og webshop og sørger for en kurateret
+llms.txt fil og dit essentielle indhold i markdown format så det er
+tilgængeligt for llm-baserede og semantiske søgninger.</p>
+<p>Pris: Fra 8.000 kr. pr. måned ekskl. moms</p>
 </section></section>
     </div>
   </div>
