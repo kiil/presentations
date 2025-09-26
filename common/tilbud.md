@@ -1,59 +1,59 @@
-# Udvalgte tilbud {background-color="white"}
+# Vi tilbyder {background-color="white"}
 
-## Startpakken: Fra viden til forståelse
+## Startpakken
 
-> Den ideelle start for teams, der vil forstå AI og identificere, hvor det kan skabe reel værdi i netop jeres virksomhed.
+> Forstå AI og identificer, hvor det skaber værdi i jeres virksomhed.
 
-Intensivt AI-træningsforløb for jeres team kombineret med strategisk workshop. Vi går fra basal viden til en prioriteret liste over de mest værdifulde AI-projekter for jer. I får både et kompetenceløft og et klart, handlingsorienteret startskud på jeres AI-rejse.
+Intensiv træning og workshop, der resulterer i en prioriteret liste over konkrete AI-projekter.
 
 Pris: 55.000 kr. ekskl. moms
 
-------------------------------------------------------------------------
+***
 
-## Acceleratorpakken: Fra ide til prototype
+## Acceleratorpakken
 
-> Gå fra strategisk brainstorming til en håndgribelig demonstration af AI's potentiale med jeres egne data og processer.
+> Gå fra idé til en håndgribelig demonstration af AI's potentiale med jeres egne data.
 
-Vi tager det bedste fra Startpakken – træning og workshop – og omsætter jeres bedste idé til en fungerende prototype (Proof of Concept). Pakken giver jer en håndgribelig demonstration af AI's værdi, hvilket fjerner usikkerhed og sikrer intern opbakning, før I investerer fuldt ud.
+Vi kombinerer træning og workshop med udvikling af en prototype (PoC) for at demonstrere værdi og sikre intern opbakning.
 
 Pris: 175.000 kr. ekskl. moms
 
-------------------------------------------------------------------------
+***
 
-## Strategisk rådgivningspakke: Jeres AI-køreplan
+## Rådgivningspakke
 
-> Få et komplet strategisk fundament og en klar køreplan for jeres AI-rejse, udviklet i tæt samarbejde med jeres ledelse.
+> Få et strategisk fundament og en klar AI-køreplan udviklet sammen med ledelsen.
 
-Målrettet ledelsen. Vi analyserer jeres virksomheds AI-parathed og faciliterer derefter en strategisk workshop for at udvikle jeres vision og en konkret køreplan. Leverancen er et færdigt strategidokument, der sikrer jeres AI-investeringer er fuldt afstemt med virksomhedens overordnede mål.
+Analyse og workshop for ledelsen, der resulterer i et færdigt strategidokument med vision og køreplan.
 
 Pris: 80.000 kr. ekskl. moms
 
-------------------------------------------------------------------------
+***
 
-## Implementeringspakken: Skræddersyet AI-løsning
+## Implementeringspakken
 
-> Vi bygger og implementerer en specialiseret AI-løsning, der udnytter jeres interne viden og automatiserer jeres unikke processer.
+> Vi bygger en AI-løsning, der udnytter jeres viden og automatiserer jeres processer.
 
-Klar til at eksekvere? Vi designer, bygger og implementerer en fuldskala, skræddersyet AI-løsning, f.eks. et intelligent søgesystem (RAG) til jeres interne viden. Vi håndterer hele processen for at levere et system, der skaber målbar effektivitet og værdi i jeres daglige drift.
+Vi designer og implementerer en fuldskala, skræddersyet AI-løsning (f.eks. RAG) for at skabe målbar effektivitet.
 
 Pris: Fra 250.000 kr. ekskl. moms
 
-------------------------------------------------------------------------
+***
 
-## Retainer & vækstpakke: Løbende sparring og optimering
+## Retainerpakke
 
-> Sikr jer vedvarende adgang til ekspertviden og få en fast partner, der hjælper jer med at navigere, vedligeholde og videreudvikle jeres AI-initiativer.
+> Sikr jer løbende adgang til en AI-ekspert til at vedligeholde og udvikle jeres initiativer.
 
-Garanteret løbende adgang til en fast AI-partner. Med denne retainer-pakke får I et aftalt antal timer hver måned til sparring, support og strategisk rådgivning. Vi hjælper jer med at fastholde momentum og sikrer, at jeres AI-løsninger kontinuerligt optimeres og skaber værdi.
+Fast adgang til en AI-partner via et aftalt antal timer hver måned til sparring, support og optimering.
 
 Pris: Fra 8.000 kr. pr. måned ekskl. moms
 
-------------------------------------------------------------------------
+***
 
-## Hjemmesidepakken: Forbliv relevant med llms.txt
+## Hjemmesidepakken
 
-> Med en llms.txt fil og dit vigtigste indhold som markdown-filer forbliver du relevant når ChatGPT og Gemini bliver folk nye søgemaskiner
+> Bliv relevant for nye søgemaskiner som ChatGPT og Gemini med en llms.txt fil.
 
-Vi analyserer din hjemmeside og webshop og sørger for en kurateret llms.txt fil og dit essentielle indhold i markdown format så det er tilgængeligt for llm-baserede og semantiske søgninger.
+Vi opretter en llms.txt fil og formaterer dit indhold, så det er klar til LLM-baserede søgninger.
 
 Pris: Fra 8.000 kr. pr. måned ekskl. moms
