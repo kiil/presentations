@@ -2,16 +2,16 @@
 
 ## Program
 
-|              |                              |
-| -            | -                            |
-| 09.00        | Kaffe og croissant           |
-| 09.15       | AI - fordele og faldgruber             |
-| 09.45       | Gruppearbejde            |
+|             |                              |
+| -           | -                            |
+| 09.00       | Kaffe og croissant           |
+| 09.15       | AI - fordele og faldgruber   |
+| 09.45       | Gruppearbejde                |
 | 10.15       | Plenum                       |
-| 10.30       | Prompts og øvelser                      |
+| 10.30       | Prompts og øvelser           |
 | 10.45       | Plenum                       |
-| 11.00       | Projekter og øvelser                               |
-| 11.45        | Opsamling |
+| 11.00       | Projekter og øvelser         |
+| 11.45       | Opsamling                    |
 
 ## Mål
 
@@ -33,6 +33,8 @@ Tænk på den som en avanceret "auto-complete".
 
 ------------------------------------------------------------------------
 
+### LLM
+
 1.  En stor sprogmodel er blevet **trænet** på enorme mængder tekst
 2.  Den har lært **mønstre**, sammenhænge og strukturer i sprog
 3.  Den giver det mest **sandsynlige** svar, baseret på sin træning
@@ -43,12 +45,21 @@ En AI "hallucinerer", når den **finder på fakta, kilder eller oplysninger**, s
 
 ---
 
-- **Prompt:** "Hvem var den første danske kvinde på Mount Everest?"
-- **AI svarer:** "Lene Gammelgaard var den første danske kvinde på Mount Everest i 1996, som en del af en ekspedition ledet af den berømte sherpa Tenzing Norgay."
+### Prompt
+
+"Hvem var den første danske kvinde på Mount Everest?"
 
 ---
 
-- **Faktatjek:** Lene Gammelgaard var den første, men Tenzing Norgay døde i 1986 og kunne derfor ikke have ledet ekspeditionen i '96.
+### Svar
+
+"Lene Gammelgaard var den første danske kvinde på Mount Everest i 1996, som en del af en ekspedition ledet af den berømte sherpa Tenzing Norgay."
+
+---
+
+### Realitet
+
+Lene Gammelgaard var den første danske kvinde på Mount Everest, men Tenzing Norgay døde i 1986 og kunne derfor ikke have ledet ekspeditionen i '96.
 
 ------------------------------------------------------------------------
 
@@ -168,15 +179,17 @@ Brug din tablet eller laptop eller del med sidemakker. Vi skal ind på ChatGPT.
 
 ---
 
-**Tænk over to projekter**: Tænk over to projekter som du gerne vil have hjælp til fra kunstig intelligens. Hvorfor er det en fordel at holde dem adskilte?
+**Tænk**: Tænk over to projekter du gerne vil have hjælp til fra AI. Hvorfor er det en fordel at holde dem adskilte?
 
-**Opret projekter**: Brug ChatGPT gratis og opret to projekter.
+**Opret**: Brug ChatGPT og opret to projekter.
 
-**Start en chat**: Begynd en samtale med ChatGPT hvor du forklarer den om det projekt du har valgt at starte med.
+**Chat**: Start en samtale med ChatGPT hvor du forklarer den om det projekt du har valgt.
 
 # Opsamling
 
 ## Projekter og organisering
+
+Hvorfor er det vigtigt at organisere sit arbejde med ChatGPT?
 
 ## Beskyt dine Private Oplysninger
 
@@ -184,7 +197,7 @@ Alt du deler om en online AI, kan potentielt blive set af uvedkommende.
 
 ------------------------------------------------------------------------
 
-|**Dette kan du trygt dele** |**Dette bør du ALDRIG dele** |
+|**Du kan trygt dele** |**Du bør ALDRIG dele** |
 |:--------------------------------------------|:------------------------------------------|
 |Generelle spørgsmål og research|Personnumre (CPR), passwords, kreditkortoplysninger|
 |Anonymiserede data *(f.eks. "En kunde har et problem med...")*|Fortrolige forretningsstrategier eller kundedata|
@@ -196,7 +209,7 @@ Alt du deler om en online AI, kan potentielt blive set af uvedkommende.
 
 ## Muligheder...
 
-**Hvad AI er fantastisk til i dag:**
+**Hvad AI er fantastisk til i dag?**
 
 - **Assistent:** Få udkast, research, ideer og struktur
 - **Hastighed:** Producere store mængder tekst eller mange variationer hurtigt
@@ -204,7 +217,7 @@ Alt du deler om en online AI, kan potentielt blive set af uvedkommende.
 
 ## ...og begrænsninger
 
-**Hvor AI stadig har begrænsninger:**
+**Hvor har AI stadig begrænsninger?**
 
 - **Menneskelig forståelse:** Mangler empati og situationsfornemmelse
 - **Ægte originalitet:** Skaber ud fra eksisterende data
