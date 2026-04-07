@@ -57,3 +57,13 @@ Pris: Fra 8.000 kr. pr. måned ekskl. moms
 Vi opretter en llms.txt fil og formaterer dit indhold, så det er klar til LLM-baserede søgninger.
 
 Pris: Fra 8.000 kr. pr. måned ekskl. moms
+
+---
+
+## Færdighedspakken
+
+> Opbyg jeres medarbejderes AI-færdigheder til fremtiden.
+
+Skræddersyet forløb, der opbygger AI Literacy i hele organisationen, fra grundlæggende viden til anvendelse i daglige opgaver.
+
+Pris: Fra 45.000 kr. ekskl. moms
